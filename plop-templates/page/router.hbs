@@ -1,0 +1,15 @@
+,
+  { path: '{{name}}',
+    component: Layout,
+    redirect: '/{{name}}/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/{{name}}/index'),
+        name: '{{ properCase name }}',
+        meta: {
+          title: '{{name}}',
+          icon: '{{name}}'
+        }
+      }]
+  }// INSERT ROUTER

@@ -1,0 +1,29 @@
+@import "normalize.css";
+/* 解决与elp样式冲突的问题 */
+@import "tailwindcss/tailwind.css";
+@import "theme";
+
+/* 去除li 原点 */
+li {
+  list-style: none;
+}
+
+.border-c {
+  @apply border-2 border-solid border-neutral-500;
+}
+
+.bg-image {
+  @apply absolute left-0 top-0 h-full w-full -z-10;
+}
+
+.flex-ajc {
+  @apply flex justify-center items-center;
+}
+
+.flex-jsp {
+  @apply flex justify-around;
+}
+
+.flex-col-center {
+  @apply flex flex-col items-center;
+}

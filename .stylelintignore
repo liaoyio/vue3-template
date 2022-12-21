@@ -1,0 +1,7 @@
+*.js
+*.vue
+*.json
+dist
+src/styles/normalize.css
+src/styles/index.scss
+src/styles/variables.module.scss
